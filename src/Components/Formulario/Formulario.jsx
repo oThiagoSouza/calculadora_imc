@@ -16,8 +16,8 @@ function Formulario(){
         <>
             <div className="container">
                 <form className="form_imc">
-                    <input onChange={ e => setPeso(+e.target.value) } value={peso} type="number" placeholder='informe seu peso' />
-                    <input onChange={ e => setAltura(+e.target.value) } value={altura} type="number" placeholder='informe sua altura' />
+                    <input onChange={ e => setPeso(+e.target.value) } type="number" placeholder='informe seu peso' />
+                    <input onChange={ e => setAltura(+e.target.value) } type="number" placeholder='informe sua altura' />
                     <button onClick={calculaImc} type='button'>Calcular</button>
                     <p>{result}</p>
                 </form>
